@@ -1,7 +1,4 @@
-/**
- * Created by hustcc 18/05/27.
- * Contract: i@hust.cc
- */
+const OriginalDate = Date;
 
 // undefined means unmock.
 const DEFAULT = undefined;
@@ -13,7 +10,7 @@ let nowDate = DEFAULT;
  * move date by offset `ms`
  * @param ms
  */
-export const advanceBy = ms => nowDate = (nowDate === undefined ? +new Date() : nowDate) + (ms || 0);
+export const advanceBy = ms => nowDate = (nowDate === undefined ? +new OriginalDate() : nowDate) + (ms || 0);
 
 /**
  * reset Date
@@ -21,7 +18,7 @@ export const advanceBy = ms => nowDate = (nowDate === undefined ? +new Date() : 
  * @param ms
  * @returns {*}
  */
-export const advanceTo = ms => nowDate = ms ? +new Date(ms) : 0;
+export const advanceTo = ms => nowDate = ms ? +new OriginalDate(ms) : 0;
 
 /**
  * clear mock

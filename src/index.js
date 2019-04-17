@@ -1,8 +1,3 @@
-/**
- * Created by hustcc 18/05/27.
- * Contract: i@hust.cc
- */
-
 export { advanceBy, advanceTo, clear } from './date';
 
 import { mockDateClass } from './mockDate';
