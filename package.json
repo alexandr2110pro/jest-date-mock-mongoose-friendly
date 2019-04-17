@@ -1,17 +1,18 @@
 {
-  "name": "jest-date-mock",
-  "version": "1.0.7",
-  "description": "Mock `window.Date` when run unit test cases with jest. Make tests of `Date` easier.",
+  "name": "jest-date-mock-mongoose-friendly",
+  "version": "1.1.0",
+  "description": "Mock for the Date. A fork of jest-date-mock but Doesn't break the mongoose",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
     "test": "jest --no-cache",
+    "prepublish": "yarn build",
     "build": "babel src --out-dir lib --copy-files && npm run test",
     "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hustcc/jest-date-mock.git"
+    "url": "git+https://github.com/alexandr2110pro/jest-date-mock-mongoose-friendly.git"
   },
   "keywords": [
     "mock",
@@ -19,14 +20,15 @@
     "jest-date",
     "Date",
     "datetime",
-    "timestamp"
+    "timestamp",
+    "mongoose"
   ],
-  "author": "hustcc",
+  "author": "alexandr2110pro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hustcc/jest-date-mock/issues"
+    "url": "https://github.com/alexandr2110pro/jest-date-mock-mongoose-friendly/issues"
   },
-  "homepage": "https://github.com/hustcc/jest-date-mock#readme",
+  "homepage": "https://github.com/alexandr2110pro/jest-date-mock-mongoose-friendly#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^22.0.4",
