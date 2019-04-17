@@ -1,6 +1,6 @@
 {
   "name": "jest-date-mock-mongoose-friendly",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Mock for the Date. A fork of jest-date-mock but Doesn't break the mongoose",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
